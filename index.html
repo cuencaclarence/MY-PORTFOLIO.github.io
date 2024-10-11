@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Personal Website</title>
+</head>
+<body class="bg-white text-black">
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+            <li><a href="#about" onclick="scrollToSection('about')">About Me</a></li>
+            <li><a href="#skills" onclick="scrollToSection('skills')">Skills</a></li>
+            <li><a href="#projects" onclick="scrollToSection('projects')">Projects</a></li>
+            <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <div class="text-content">
+                <h1 class="text-4xl font-bold">
+                    Hello! I’m Clarence, a web developer enthusiast. My fascination with code and design fuels my drive to constantly learn and innovate.
+                </h1>
+            </div>
+            <img src="images/clarence.jpg" alt="Profile Picture" class="profile-pic">
+        </section>
+        
+        <section id="about">
+            <div class="content-container">
+                <h1 class="text-4xl font-bold">About Me</h1>
+                <p>Hi! I'm Clarence A. Cuenca, 21 years old, a front-end developer passionate about crafting user-friendly and visually stunning web experiences. I bring a blend of technical expertise and creative flair to translate ideas into interactive realities on the web.</p>
+                <p>I am currently a 4th year BSIT student at Caraga State University Main campus.</p>
+            </div>
+            <img src="images/clarence2.jpg" alt="Profile Picture" class="about-pic">
+        </section>
+
+        <section id="skills">
+          <div class="skills-container">
+              <h1 class="skills-heading">Skills</h1>
+              <ul class="skills-list">
+                  <li>HTML, CSS, JavaScript</li>
+                  <li>Web Development</li>
+                  <li>Problem Solving</li>
+              </ul>
+              <div class="skills-images">
+                  <img src="images/html,css,js.jpg" alt="HTML, CSS, JavaScript" class="skills-image">
+                  <img src="images/webdev.jpg" alt="Web Development" class="skills-image">
+                  <img src="images/problemsolving.png" alt="Problem Solving" class="skills-image">
+              </div>
+          </div>
+      </section>
+      
+      <section id="projects">
+        <h1 class="text-4xl font-bold">Projects</h1>
+        <div class="project-section">
+          <div class="project-card">
+            <h2>FurFinds System</h2>
+            <img src="images/furfinds.png" alt="FurFinds System Image">
+            <p>Our system is a cutting-edge solution designed to help pet lovers find their fur friends quickly and efficiently. It offers a user-friendly platform to find dog's details, and engaging with the local community to aid in the search.</p>
+            <a href="#">View Project</a>
+          </div>
+          <div class="project-card">
+            <h2>Cars Shop</h2>
+            <img src="images/carshop.png" alt="Cars Shop Image">
+            <p>Gearhead Paradise is not just a car shop, it's a haven for car enthusiasts and everyday drivers alike. We offer a comprehensive range of services to keep your vehicle running smoothly and looking its best.</p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-cards">
+            
+            <!-- Email Contact Card -->
+            <div class="contact-card">
+                <img src="images/gmail.png" alt="Email">
+                <div class="contact-info">
+                    <h2>Gmail</h2>
+                    <a href="mailto:clarencecuenca0950@mail.com">clarencecuenca0950@mail.com</a>
+                </div>
+            </div>
+    
+            <!-- Facebook Contact Card -->
+            <div class="contact-card facebook">
+                <img src="images/facebook.png" alt="Facebook">
+                <div class="contact-info">
+                    <h2>Facebook</h2>
+                    <a href="https://facebook.com/clarence.cuenca18">facebook.com/clarence.cuenca18</a>
+                </div>
+            </div>
+    
+            <!-- Phone Contact Card -->
+            <div class="contact-card phone">
+                <img src="images/phone.png" alt="Phone">
+                <div class="contact-info">
+                    <h2>Phone</h2>
+                    <a href="tel:+639918816751">+639918816751</a>
+                </div>
+            </div>
+    
+            <!-- GitHub Contact Card -->
+            <div class="contact-card github">
+                <img src="images/github.png" alt="GitHub">
+                <div class="contact-info">
+                    <h2>GitHub</h2>
+                    <a href="https://github.com/cuencaclarence/MY-PORTFOLIO.github.io">github.com/your-profile</a>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    </main>
+
+    <script>
+        function scrollToSection(elementId) {
+            const element = document.getElementById(elementId);
+            window.scrollTo({
+                top: element.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: transparent;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: whitesmoke; /* Semi-transparent background for visibility */
+  color: black;
+  z-index: 1000; /* Ensures the navigation stays on top of other elements */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end; /* Aligns navigation links to the right */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: blue; /* Change color on hover for interaction feedback */
+}
+
+
+/* Home Section */
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-image: url("images/abackground.jpg");
+  color: white;
+  min-height: 100vh; /* Ensures the section covers the full viewport height */
+}
+
+.text-content {
+  max-width: 60%;
+}
+
+.profile-pic{
+  border-radius: 15px;
+  width: 300px;      /* Controls the width */
+  height: 400px;         /* Sets a specific height for the rectangle shape */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Keeps the shadow for depth */
+  object-fit: cover;     /* Ensures the image scales nicely within the rectangle */
+}
+p{
+  font-size: larger;
+}
+/* About Section */
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: whitesmoke;
+  min-height: 100vh; /* Ensures the section covers the full viewport height */
+}
+
+.about-content {
+  max-width: 60%;
+  text-align: left;
+}
+
+.about-pic {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+p{
+  margin-right: 150px;
+}
+
+/* Skills Section */
+#skills {
+  text-align: center;
+  padding: 100px;
+  background-image:url("images/abackground.jpg");
+  color: whitesmoke;
+  min-height: 100vh; /* Ensures the section covers the full viewport height */
+}
+
+.skills-heading {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;               /* Align the list items horizontally */
+  justify-content: center;     /* Center the skill list */
+  gap: 30px;                   /* Add space between each skill */
+  margin-bottom: 40px;
+}
+
+.skills-list li {
+  padding: 30px;
+  font-size: 20px;
+}
+
+.skills-images {
+  display: flex;               /* Align the images horizontally */
+  justify-content: center;     /* Center the images */
+  gap: 20px;                   /* Add space between each image */
+}
+
+.skills-image {
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.skills-image:hover {
+  transform: scale(1.1);
+}
+
+
+/* Projects Section */
+#projects {
+  text-align: center;
+  padding: 60px;
+  background-color: #fff;
+  min-height: 100vh; /* Ensures the section covers the full viewport height */
+}
+
+#projects h1 {
+  margin-bottom: 50px; /* Space between the heading and the project cards */
+}
+
+.project-card h2 {
+  color: whitesmoke; /* Set text color for project titles */
+  margin: 0 0 10px; /* Space below the title */
+}
+
+.project-card p {
+  color: whitesmoke; /* Set text color for project descriptions */
+  margin: 0; /* Remove default margin */
+}
+
+.project-section {
+  display: flex;
+  justify-content: space-evenly; /* Evenly spaces the project cards horizontally */
+  flex-wrap: wrap; /* Ensures the project cards wrap if the screen is too narrow */
+  gap: 30px;
+}
+
+.project-card {
+  flex: 1 1 300px; /* Allows the card to grow and shrink, but keeps a minimum width of 300px */
+  max-width: 400px; /* Sets a maximum width to keep the design consistent */
+  background-color: #535357;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(61, 59, 59, 0.1);
+  transition: transform 0.3s ease;
+}
+.project-card a {
+  color: lightblue; /* Set link color to light blue */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make the link text bold */
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Adds a hover effect for interaction */
+}
+
+#contact {
+  text-align: center;
+  padding: 100px;
+  background-image: url("images/abackground.jpg");
+  background-size: cover; /* Ensures the background image covers the entire section */
+  background-position: center; /* Centers the background image */
+  min-height: 80vh; /* Ensures the section covers the full viewport height */
+}
+
+#contact h1 {
+  margin-bottom: 40px; /* Space between the heading and the contact cards */
+  color: whitesmoke;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center; /* Center align the contact cards horizontally */
+  flex-wrap: wrap; /* Allows wrapping of contact cards if the screen is too narrow */
+  gap: 20px; /* Space between contact cards */
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column; /* Aligns children vertically */
+  align-items: center; /* Center align items horizontally */
+  background-color: rgb(170, 165, 165);
+  padding: 20px;
+  border-radius: 10px;
+  height: auto; /* Adjusts height based on content */
+  width: 250px; /* Sets a fixed width for consistency */
+  transition: transform 0.3s ease;
+}
+
+.contact-card img {
+  width: 50px; /* Set a fixed width for icons */
+  margin-bottom: 10px; /* Space between the image and the text */
+}
+
+.contact-info {
+  text-align: center; /* Center align the text within the contact-info container */
+}
+
+.contact-info h2 {
+  color: #e6d8d8; /* Color for the contact type header */
+  margin: 0 0 5px; /* Space below the header */
+}
+
+.contact-info p {
+  color: #555; /* Color for the contact information */
+  margin: 0; /* Remove default margin */
+}
+
+.contact-card a {
+  color: lightblue; /* Color for the links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.contact-card a:hover {
+  text-decoration: underline; /* Add underline on hover for better visibility */
+}
+
+.contact-card:hover {
+  transform: scale(1.05); /* Adds a hover effect for interaction */
+}
+
+footer {
+  background-color: gray; /* Gray background for the footer */
+  color: white; /* White text color for contrast */
+  text-align: center; /* Center align the text */
+  padding: 20px; /* Add padding for spacing */
+}
+/* For tablets and small screens */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center; /* Center align items horizontally */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Adjust margin for vertical stacking */
+  }
+
+  #home, #about, #skills, #projects, #contact {
+    padding: 30px; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center align text */
+  }
+
+  .text-content, .about-content {
+    max-width: 100%; /* Full width for text content */
+  }
+
+  .profile-pic, .about-pic {
+    max-width: 100%; /* Full width for images */
+    height: auto; /* Adjust height automatically */
+  }
+
+  .skills-list {
+    flex-direction: column; /* Stack skills vertically */
+  }
+
+  .skills-images {
+    flex-direction: column; /* Stack skill images vertically */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  nav {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack the navigation items vertically */
+    align-items: center; /* Center-align the items */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Add vertical space between items */
+  }
+
+  nav ul li a {
+    font-size: 16px; /* Adjust font size for readability on smaller screens */
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+}
