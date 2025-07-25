@@ -12,9 +12,10 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1, h3 {
   font-weight: bold;
 }
+
 
 /* Navigation Bar */
 nav {
@@ -26,6 +27,13 @@ nav {
   z-index: 1000; /* Ensures the navigation stays on top of other elements */
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+}
+nav a {
+  transition: transform 0.2s ease;
+}
+
+nav a:active {
+  transform: scale(0.95);
 }
 
 nav ul {
@@ -71,7 +79,7 @@ nav ul li a:hover {
 .profile-pic{
   border-radius: 15px;
   width: 300px;      /* Controls the width */
-  height: 400px;         /* Sets a specific height for the rectangle shape */
+  height: 450px;         /* Sets a specific height for the rectangle shape */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Keeps the shadow for depth */
   object-fit: cover;     /* Ensures the image scales nicely within the rectangle */
 }
@@ -243,7 +251,7 @@ p{
 }
 
 .contact-info h2 {
-  color: #e6d8d8; /* Color for the contact type header */
+  color: #252424; /* Color for the contact type header */
   margin: 0 0 5px; /* Space below the header */
 }
 
