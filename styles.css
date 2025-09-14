@@ -144,6 +144,8 @@ section {
   gap:18px;
   align-items:center;
   width:100%;
+  background-image: url(images/abackground.jpg);
+  background-size:no-repeat;
 }
 
 /* ladder-style home title (fixed to top-left of the section) */
