@@ -262,6 +262,10 @@ section {
 }
 
 /* SKILLS */
+#skills{
+  background-image: url(images/abackground.jpg);
+  background-size:contain;
+  }
 .skills__container {
   display:flex;
   gap:30px;
@@ -384,6 +388,10 @@ section {
 
 
 /* CONTACT */
+#contact{
+  background-image: url(images/abackground.jpg);
+  background-size:contain;
+}
 .contact-cards{
   display:flex;
   gap:18px;
